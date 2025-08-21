@@ -1,0 +1,44 @@
+# Data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.sav
+*.sas7bdat
+*.db
+*.sqlite
+*.h5
+*.json
+*.xml
+*.zip
+
+# Notebooks
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Reports
+*.pdf
+*.pptx
+*.docx
+*.html
+*.png
+*.jpg
+*.svg
+
+# System
+.DS_Store
+Thumbs.db
+.env
+
+# VS Code
+.vscode/
