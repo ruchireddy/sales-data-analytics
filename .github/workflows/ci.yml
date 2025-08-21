@@ -23,11 +23,15 @@ jobs:
         with:
           python-version: '3.x'  # Choose the version of Python you need
 
-      # Install dependencies
+      # Install dependencies (if requirements.txt exists)
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt  # Assuming you have a requirements.txt file for your dependencies
+          if [ -f requirements.txt ]; then
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+          else
+            echo "No requirements.txt file found. Skipping dependency installation."
+          fi
 
       # List files in the repo (you can expand this to run tests later)
       - name: List files
